@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.main-header
+{
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(135deg, #f0cbca, #96a7ce);
+    overflow: hidden;
+    position: fixed; /* 헤더를 화면 상단에 고정 */
+    display: flex; /* 헤더 내부 요소들을 가로로 정렬 */
+    align-items: center; 
+    padding: 0 20px; /* 헤더의 좌우에 20픽셀의 여백 설정 */
+    z-index: 10;
+}
+
+
+.logo-img img {
+    width: 95px;
+    height: 80px;
+}
+
+.main-header > .logo h1 {
+    font-size: 70px;
+    color: white;
+    margin: 0;
+}
+
+.nav-header {
+    display: flex; /* 메뉴를 가로로 정렬 */
+    gap: 30px; /* 메뉴 간 간격 */
+    margin-left: auto;
+}
+
+.main-header > .nav-header a:hover {
+    color: #f0cbca; 
+}
+
+.main-header > .nav-header a {
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+
+#main-section {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    
+}
+
+#main-section img {
+    width: 100%; /* 부모 요소의 너비에 꽉 채움 */
+    height: 100vh; /* 화면 높이에 꽉 채움 */
+    object-fit: cover; /* 이미지 비율 유지하며 공간을 채움 */
+    margin-top: 40px;
+}
+
+/* 메인화면 */
+
+#first-section {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.main-img img{
+    width: 100px;
+    height: 50px;
+}
+
+/* 첫 번째 서브 레이아웃 */
+
+#first-section {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.box1{
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(135deg, #f0cbca, #96a7ce);
+    display: flex;
+    font-size: 30px;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;    /* 세로 중앙 정렬 */
+    height: 125px;          /* 필요한 높이 설정 */
+    color: white;
+}
+
+.box1 h2{
+    position: relative;
+    top: 20px;
+}   
+
+
+
+.seventeen{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #f0cbca, #96a7ce);
+    margin-top: 50px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 270px;
+    height: 72px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    border-width: 4px;
+    border-color: #b8b8b8;
+    border-radius:10px;
+    align-items: center;
+}
+
+.hiphop{
+    color: rgb(255, 255, 255);
+    background-color: #474646;
+    margin-top: 15px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 225px;
+    height: 67px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    border-width: 4px;
+    border-color: #c8c8c8;
+    border-radius:10px;
+    align-items: center;
+}
+
+.vocal{
+    color: white;
+    background-color: #FCC4D3;
+    margin-top: 15px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 225px;
+    height: 67px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    border-width: 4px;
+    border-color: #ffdee7;
+    border-radius:10px;
+}
+
+.performance{
+    color: white;
+    background-color: #455BE8;
+    margin-top: 15px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 225px;
+    height: 67px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    border-width: 4px;
+    border-color: #a3aef7;
+    border-radius:10px;
+}
+
+.leaders{
+    color: white;
+    background-color: #ED4450;
+    margin-top: 15px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 180px;
+    height: 54px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    border-width: 4px;
+    border-color: #e56b73;
+    border-radius:10px;
+}
+
+.bss{
+    color: white;
+    background-color: #CE5355;
+    margin-top: 15px;
+    margin-left: 6px;
+    padding-left: 10px;
+    width: 180px;
+    height: 54px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    border-width: 4px;
+    border-color: #db9394;
+    border-radius:10px;
+}
+
+#second-section {
+    width: 100%;
+    height: 130vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(SEVENTEENHGR.jpg);
+    
+}
+
+@media only screen and (min-width:2097px){
+    #second-section{
+        /* 화면 넓이를 지정 */
+        max-width: 2097px;
+    }
+}
+
+
+/* 두 번째 서브 레이아웃 */
+
+.box2{
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(135deg  , #f0cbca, #96a7ce);
+    display: flex;
+    font-size: 30px;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;    /* 세로 중앙 정렬 */
+    color: white;
+    margin-bottom: 60px;
+}
+
+
+.box2 h2{
+    position: relative;
+}
+
+footer{
+    width: 100%;        
+    height: 150px;
+    background-color: #474646;
+    padding: 40px;
+    padding-left: 100px;
+    justify-content: center;
+}
+
+.foot{
+     color:#fff;
+}
+
+.footer-contents{
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    align-items: center; 
+}

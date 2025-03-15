@@ -1,0 +1,124 @@
+ 
+/* 전체 슬라이더를 감싸는 래퍼 */
+.slider-wrapper2, .slider-wrapper3, .slider-wrapper4, .slider-wrapper5, .slider-wrapper6 {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 화살표를 양쪽으로 배치 */
+    width: 625px; /* 슬라이더 너비 */
+    margin: auto; /* 가운데 정렬 */
+    position: relative;
+    margin-top: 30px;
+    
+}
+
+/* 슬라이더 컨테이너 */
+.slider-container2, .slider-container3, .slider-container4, .slider-container5, .slider-container6 {
+    width: 750px; /* 이미지 슬라이더 크기 */
+    height: 625px;
+    overflow: hidden; /* 이미지를 한 번에 하나만 보이도록 */
+}
+
+/* 슬라이더 */
+.slider2, .slider3, .slider4, .slider5, .slider6 {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* 슬라이딩 애니메이션 */
+    z-index: 20;
+}
+
+
+/* 각 이미지 */
+.slider2 img, .slider3 img, .slider4 img, .slider5 img, .slider6 img {
+    width: 500px;
+    height: 625px;
+    object-fit: cover; /* 비율 유지하며 이미지 맞춤 */
+}
+
+
+.slider2 h2, .slider3 h2, .slider4 h2, .slider5 h2, .slider6 h2 {
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 40px; /* 글씨 크기 */
+    font-weight: bold; /* 글씨 두껍게 */
+    padding: 10px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+} 
+
+.slider2 a ,.slider3 a ,.slider4 a,.slider5 a,.slider6 a {
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 20px; /* 글씨 크기 */
+    padding: 8px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+} 
+
+.slider2 p, .slider3 p, .slider4 p, .slider5 p, .slider6 p{
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 18px; /* 글씨 크기 */
+    padding: 1px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+}
+
+
+.left-arrow2, .left-arrow3, .left-arrow4, .left-arrow5, .left-arrow6 {
+    margin-right: -120px; /* 오른쪽 여백 */
+    left: -130px;
+}
+
+.right-arrow2, .right-arrow3, .right-arrow4, .right-arrow5, .right-arrow6 {
+    margin-left: -120px; /* 왼쪽 여백 */
+    right: -130px;
+}
+
+.indicator2, .indicator3, .indicator4, .indicator5, .indicator6 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.slider-indicators2, .slider-indicators3, .slider-indicators4, .slider-indicators5, .slider-indicators6 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -500px;
+}
+
+.indicator2.active, .indicator3.active, .indicator4.active, .indicator5.active, .indicator6.active {
+    background-color: rgb(0, 0, 0);
+}
+
+.text-right0 h1{
+   color: white;
+}
+
+
+.text-right0 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 625px;
+    background-color: #CE5355;
+}
+
+.dddd{
+    margin-left:-10px;
+    font-size: 16px;
+}
+.slider4 li, .slider3 li, .slider2 li, .slider li {
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 15px; /* 글씨 크기 */
+    padding: 8px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+    line-height: 8px;
+    padding-left: 7px;
+    margin-right: -30px;
+} 
+
+.slider5 li,.slider6 li {
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 20px; /* 글씨 크기 */
+    padding: 8px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+    line-height: 21px;
+} 
+

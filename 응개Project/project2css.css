@@ -1,0 +1,133 @@
+  
+/* 전체 슬라이더를 감싸는 래퍼 */
+.slider-wrapper {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 화살표를 양쪽으로 배치 */
+    width: 625px; /* 슬라이더 너비 */
+    margin: auto; /* 가운데 정렬 */
+    position: relative;
+    margin-top: 30px;
+}
+
+/* 슬라이더 컨테이너 */
+.slider-container {
+    width: 750px; /* 이미지 슬라이더 크기 */
+    height: 625px;
+    overflow: hidden; /* 이미지를 한 번에 하나만 보이도록 */
+    justify-content: center;
+
+    
+}
+
+/* 슬라이더 */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* 슬라이딩 애니메이션 */
+}
+
+
+/* 각 이미지 */
+.slider img {
+    width: 500px;
+    height: 625px;
+    object-fit: cover; /* 비율 유지하며 이미지 맞춤 */
+}
+
+.svt1,.svt0, .svt2, .svt3, .svt4, .svt5, .svt6, .svt7, .svt8, .svt9, .svt10, .svt11, .svt12, .svt13 {
+    display: flex; /* 가로로 나열 */
+}
+
+.text-right2, .text-right3, .text-right7, .text-right10, .text-right11 {
+    display: flex;
+    flex-direction: column; /* 텍스트를 세로로 정렬 */
+    width: 250px;
+    height: 625px;
+    background-color: #FCC4D3;
+}
+
+.text-right1, .text-right6, .text-right9, .text-right12 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 625px;
+    background-color: #474646;
+}
+
+.text-right4, .text-right5,.text-right0, .text-right8, .text-right13 {
+    display: flex; /* 텍스트가 이미지 오른쪽에 정렬되도록 설정 */
+    flex-direction: column;
+    width: 250px;
+    height: 625px;
+    background-color: #455BE8;
+}
+
+.slider h2 {
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 40px; /* 글씨 크기 */
+    font-weight: bold; /* 글씨 두껍게 */
+    padding: 10px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+} 
+
+.slider a {
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 20px; /* 글씨 크기 */
+    padding: 8px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+} 
+
+
+.slider p{
+    color: rgb(255, 255, 255); /* 글씨 색상 */
+    font-size: 18px; /* 글씨 크기 */
+    padding: 1px 12px; 
+    border-radius: 5px; /* 둥근 모서리 */
+}
+
+
+/* 화살표 스타일 */
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 0;
+    position: relative;
+}
+
+.left-arrow {
+    margin-right: -120px; /* 오른쪽 여백 */
+    left: -130px;
+}
+
+.right-arrow {
+    margin-left: -120px; /* 왼쪽 여백 */
+    right: -130px;
+}
+
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
+    margin-top: -500px;
+    justify-content: center;
+}
+
+.indicator.active {
+    background-color: rgb(0, 0, 0);
+}
+
